@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Cadastro</title>
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+    <link href="config.css" rel="stylesheet">
+  </head>
+  <body>
+    <div id="tudo">
+      <div id="topo">
+      </div>
+
+      <div id ="conteudo">
+        <div id = "principal">
+
+    <div class="row">
+      <div class="col-lg-12">
+        <img  src="ufoplogo.jpg"width="100%" height= "150px"  >
+      </div>
+    </div>
+      <center><h1><i> Cadastro </h1></i></center>
+
+ .<br><br>
+
+ <div class="row">
+  <div class="col col-sm-4">
+  </div>
+   <div class="col col-sm-8">
+     <form action="sucessoCadastro.html" method="post">
+
+       <div class="form-group">
+         <label for="matricula" class="col-sm-2 control-label">Matricula: </label>
+         <div class="col-sm-4">
+           <input type="text" class="form-control" id="matri" placeholder="Matricula">
+         </div>
+       </div><br><br>
+
+       <div class="form-group">
+         <label for="nome" class="col-sm-2 control-label">Nome: </label>
+         <div class="col-sm-4">
+           <input type="text" class="form-control" id="nome" placeholder="Nome">
+         </div>
+       </div>
+       <br><br>
+
+       <div class="form-group">
+         <label for="rua" class="col-sm-2 control-label">Rua: </label>
+         <div class="col-sm-4">
+           <input type="text" class="form-control" id="rua" placeholder="Rua">
+         </div>
+       </div><br><br>
+
+       <div class="form-group">
+         <label for="numero" class="col-sm-2 control-label">Numero: </label>
+         <div class="col-sm-2">
+           <input type="text" class="form-control" id="numero" placeholder="Numero">
+         </div>
+       </div><br><br>
+
+       <div class="form-group">
+         <label for="complemento" class="col-sm-2 control-label">Complemento: </label>
+         <div class="col-sm-4">
+           <input type="text" class="form-control" id="complemento" placeholder="Complemento">
+         </div>
+       </div><br><br>
+
+       <label for="cidade" class="col-sm-2 control-label">Cidade/Estado </label>
+           <div class="col-sm-4"id="cidadeestado">
+            <select class="form-control"name="Cidades">
+              <option value="0"></option>
+              <option value="1">Belo Horizonte - MG</option>
+              <option value="2">Vitória - ES</option>
+              <option value="3">Porto Alegre - RS</option>
+              <option value="4">Brasília - DF</option>
+            </select>
+          </div>
+          <br><br/>
+
+        <div class="form-group">
+          <label for="sexo" class="col-sm-2 control-label">Sexo: </label>
+          <label class="radio-inline"><input type="radio" name="genero" value="F">Feminino</label>
+          <label class="radio-inline"><input type="radio" name="genero" value="M">Masculino</label>
+        </div>
+        <br> </br>
+
+          <div class="form-group">
+            <label for="rg" class="col-sm-2 control-label">RG: </label>
+            <div class="col-sm-3">
+              <input type="text" class="form-control" id="rg" placeholder="RG">
+            </div>
+          </div><br><br>
+
+       <div class="form-group">
+         <label for="cpf" class="col-sm-2 control-label">CPF: </label>
+         <div class="col-sm-3">
+           <input type="text" class="form-control" id="cpf" placeholder="CPF">
+         </div>
+       </div><br><br>
+
+       <label for="tiposanguineo" class="col-sm-2 control-label">Tipo Sanguineo: </label>
+         <div class="col-sm-2" id="listasangue">
+           <select class="form-control" name="Tipo Sanguineo">
+             <option value="0"></option>
+             <option value="1">A</option>
+             <option value="2">B</option>
+             <option value="3">O</option>
+           </select>
+         </div>   <br><br>
+
+         <div class="form-group">
+           <label for="fatorrh" class="col-sm-2 control-label">Fator Rh: </label>
+           <label class="radio-inline"><input type="radio" name="rh" value="positivo">Positivo</label>
+           <label class="radio-inline"><input type="radio" name="rh" value="negativo">Negativo</label>
+        </div>   <br> <br>
+
+         <div class="form-group">
+           <label for="telefone" class="col-sm-2 control-label">Telefone: </label>
+           <div class="col-sm-3">
+             <input type="text" class="form-control" id="tel" placeholder="Telefone">
+           </div>
+         </div><br><br>
+
+         <div class="form-group">
+           <label for="celular" class="col-sm-2 control-label">Celular: </label>
+           <div class="col-sm-3">
+             <input type="text" class="form-control" id="cel" placeholder="Celular">
+           </div>
+         </div><br><br>
+
+         <label for="email" class="col-sm-2 control-label"> E-mail: </label>
+          <div class="input-group col-sm-4">
+          <input id="email" type="text" class="form-control" name="email" placeholder="E-mail">
+         </div>
+            <br><br>
+
+
+      <label for="senha" class="col-sm-2 control-label"> Senha: </label>
+      <div class="input-group col-sm-4">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+        <input id="senha" type="password" class="form-control" name="senha" placeholder="Senha">
+      </div>
+           <br><br>
+
+      <label for="senha" class="col-sm-2 control-label"> Confirmar Senha: </label>
+      <div class="input-group col-sm-4">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+        <input id="senha2" type="password" class="form-control" name="senha2" placeholder="Confirmar Senha">
+      </div>
+           <br><br>
+
+      <label for="acesso" class="col-sm-2 control-label">Acessos: </label><br>
+ 	 <div class="checkbox">
+       <label><input type="checkbox" name="acesso"> Biblioteca</label><br>
+ 	  </div>
+ 	  <div class="checkbox">
+       <label><input type="checkbox" name="acesso"> Restaurante</label><br>
+ 	  </div>
+ 	  <div class="checkbox">
+       <label><input type="checkbox" name="acesso"> Clube</label><br>
+ 	  </div>
+    <div class="checkbox">
+       <label><input type="checkbox" name="acesso"> Campo</label><br>
+ 	  </div>
+       <br><br>
+
+ </div>
+ </div>
+ <div class="row">
+   <div class="col col-sm-4">
+   </div>
+   <div class="col col-sm-2">
+       <button  class="btn btn-success" type="submit">Cadastrar</button>
+   </div>
+   <div class="col col-sm-2">
+   <button  class="btn btn-danger" type="reset">Limpar</button>
+   </div>
+   <div class="col col-sm-2">
+   <a class="btn btn-primary" href="index.html" role="button">Voltar</a>
+   </div>
+   <div class="col col-sm-4">
+   </div>
+</form>
+  </div> <br><br><br>
+
+</div>
+
+<div id = "auxiliar">
+
+</div>
+<div id = "clear">
+</div>
+</div>
+    <div class="row">
+        <div id="rodape" class="footer col-sm-12">
+          <p>André Augusto de Souza Mattos</p>
+          <p>Matricula: 11.2.8075</p>
+          <p>Email: andre0405@hotmail.com</p>
+        </div>
+    </div>
+  </div>
+  </body>
+</html>
